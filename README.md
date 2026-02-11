@@ -1,4 +1,4 @@
-# goose (a.k.a. `g`)
+# gitbag (a.k.a. `g`)
 
 An opinionated, safety-first wrapper around Git commands for people doing frequent AI-agent coding sessions (short and long) and wanting a repeatable “don’t let me destroy my repo” workflow.
 
