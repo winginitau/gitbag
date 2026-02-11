@@ -1,4 +1,4 @@
-# gitwrap (a.k.a. `g`)
+# goose (a.k.a. `g`)
 
 An opinionated, safety-first wrapper around Git commands for people doing frequent AI-agent coding sessions (short and long) and wanting a repeatable “don’t let me destroy my repo” workflow.
 
@@ -51,4 +51,30 @@ C) Other worktrees are dirty (includes untracked files).
 Example:
 ```bash
 G_MAIN_BRANCH=trunk G_REMOTE=upstream G_STRICT_FSCK=0 ./g c
+```
 
+## Installation
+Put g somewhere on your PATH, e.g.:
+```bash
+install -m 0755 g ~/.local/bin/g
+```
+
+## Tests
+This repo includes a sandboxed test runner (runs against a temporary local bare origin). To run 
+tests, both g and test_g.sh need to be copied to a directory that does not contain a git repo.
+```bash
+mkdir ../goose_test
+cp g ../goose_test/
+cp test_g.sh ../goose_test/
+cd ../goose_test
+./test_g.sh
+```
+
+## Contributing
+Contributions are welcome! Please submit a pull request with your changes.
+
+## Naming trivia: Git is not an acronym
+Linus Torvalds has joked that “git” is British slang and the git(1) manual page even calls it “the stupid content tracker.”
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
