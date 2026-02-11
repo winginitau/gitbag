@@ -63,7 +63,7 @@ install -m 0755 g ~/.local/bin/g
 This repo includes a sandboxed test runner (runs against a temporary local bare origin). To run 
 tests, both g and test_g.sh need to be copied to a directory that does not contain a git repo.
 ```bash
-mkdir ../goose_test
+mkdir -p ../goose_test
 cp g ../goose_test/
 cp test_g.sh ../goose_test/
 cd ../goose_test
